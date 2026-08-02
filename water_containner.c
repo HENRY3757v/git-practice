@@ -1,4 +1,5 @@
 #include<stdio.h>
+// brute force solution
  void input(int arr[], int size);
  void operation(int arr[], int size);
  
@@ -35,10 +36,6 @@
 	}
 	printf("MAXIMUM WATER IS %d ",maxarea);
  }
- 
- 
- 
- 
  int main()
  {
  	int size;
