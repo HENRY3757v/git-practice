@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A guided evidence desk</title>
+  <style>
+    *{box-sizing:border-box}:root{--cream:#f3eee1;--ink:#211a14;--muted:#70685e;--blue:#dce6f1;--sage:#dbe6d8;--lilac:#e3e0ef;--sand:#e8dcc7}
+    body{margin:0}
+    .slide-container{width:1280px;min-height:720px;background:var(--cream);color:var(--ink);padding:54px 68px 24px;display:grid;grid-template-columns:38% 62%;column-gap:56px}
+    .kicker,.label,.meta{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700}
+    .kicker{color:var(--muted);padding-top:4px}
+    h1{margin:25px 0 0;max-width:410px;font-family:"Bodoni 72","Didot","Bodoni MT",Georgia,serif;font-size:78px;line-height:.9;letter-spacing:-.05em;font-weight:700}
+    .intro{margin:18px 0 0;max-width:370px;font-family:Georgia,serif;font-size:21px;line-height:1.3;color:#5d554c}
+    .left-note{margin-top:28px;border-top:3px solid var(--ink);padding-top:13px;max-width:345px;font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.6;text-transform:uppercase;letter-spacing:.13em;color:var(--muted)}
+    .right{padding-top:5px}
+    .topline{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid rgba(33,26,20,.32);padding-bottom:13px}
+    .topline p{margin:0;max-width:280px;font-family:Georgia,serif;font-size:16px;line-height:1.25;color:#5d554c;text-align:right}
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-bottom:1px solid rgba(33,26,20,.32);padding-top:34px;position:relative}
+    .flow:before{content:"";position:absolute;left:24px;right:24px;top:119px;border-top:3px solid var(--ink)}
+    .stage{min-height:220px;position:relative;padding:0 12px 0 0}
+    .stage:not(:last-child){border-right:1px solid rgba(33,26,20,.2);margin-right:16px}
+    .stage-no{position:relative;z-index:1;width:48px;height:48px;display:flex;align-items:center;justify-content:center;background:var(--cream);border:3px solid var(--ink);font-family:"Bodoni 72",Didot,Georgia,serif;font-size:26px}
+    .stage:nth-child(2) .stage-no{background:var(--blue)}.stage:nth-child(3) .stage-no{background:var(--sand)}.stage:nth-child(4) .stage-no{background:var(--sage)}.stage:nth-child(5) .stage-no{background:var(--lilac)}
+    .stage h2{margin:34px 0 0;font-family:"Bodoni 72",Didot,Georgia,serif;font-size:31px;line-height:1;font-weight:700;letter-spacing:-.03em}
+    .stage p{margin:13px 0 0;max-width:145px;font-family:Georgia,serif;font-size:15px;line-height:1.25;color:#5d554c}
+    .outputs{display:grid;grid-template-columns:1fr 1fr;gap:34px;padding-top:12px}
+    .output{border-top:3px solid var(--ink);padding-top:10px}
+    .output strong{display:block;font-family:Arial,Helvetica,sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.15em}
+    .output span{display:block;margin-top:7px;font-family:Georgia,serif;font-size:17px;line-height:1.2;color:#5d554c}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <section>
+      <div class="kicker">03 / The solution</div>
+      <h1>A guided evidence desk.</h1>
+      <p class="intro">IP-SAKTI Sahayak turns a broad commercialization question into a sequence of smaller, auditable decisions.</p>
+      <div class="left-note">Not a chatbot that guesses. A workflow that shows what it knows, where it came from, and when to ask a human.</div>
+    </section>
+    <section class="right">
+      <div class="topline"><div class="label">One question. Five moves.</div><p>Multilingual input, structured routing, source-grounded output.</p></div>
+      <div class="flow">
+        <div class="stage"><div class="stage-no">01</div><h2>Ask</h2><p>Describe the formulation, claim, ingredient, or decision ahead.</p></div>
+        <div class="stage"><div class="stage-no">02</div><h2>Route</h2><p>Separate IP, regulatory, ABS, and prior-art signals.</p></div>
+        <div class="stage"><div class="stage-no">03</div><h2>Classify</h2><p>Use targeted questions to identify the formulation category.</p></div>
+        <div class="stage"><div class="stage-no">04</div><h2>Retrieve</h2><p>Match the question to curated authoritative passages.</p></div>
+        <div class="stage"><div class="stage-no">05</div><h2>Explain</h2><p>Return citations, confidence, limitations, and escalation.</p></div>
+      </div>
+      <div class="outputs"><div class="output"><strong>Output one / evidence trail</strong><span>Exact source metadata, relevant passage, and confidence level.</span></div><div class="output"><strong>Output two / human handoff</strong><span>A structured review request when the decision needs qualified expertise.</span></div></div>
+    </section>
+  </div>
+</body>
+</html>

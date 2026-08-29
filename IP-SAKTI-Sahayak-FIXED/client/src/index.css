@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600;6..96,700;6..96,800;6..96,900&family=DM+Serif+Text:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --color-background: oklch(0.955 0.019 88);
+  --color-foreground: oklch(0.23 0.025 70);
+  --color-card: oklch(0.985 0.012 88);
+  --color-card-foreground: oklch(0.23 0.025 70);
+  --color-popover: oklch(0.985 0.012 88);
+  --color-popover-foreground: oklch(0.23 0.025 70);
+  --color-primary: oklch(0.28 0.025 70);
+  --color-primary-foreground: oklch(0.96 0.018 88);
+  --color-secondary: oklch(0.9 0.036 86);
+  --color-secondary-foreground: oklch(0.29 0.025 70);
+  --color-muted: oklch(0.92 0.025 88);
+  --color-muted-foreground: oklch(0.5 0.025 70);
+  --color-accent: oklch(0.87 0.05 84);
+  --color-accent-foreground: oklch(0.24 0.025 70);
+  --color-destructive: oklch(0.54 0.18 28);
+  --color-border: oklch(0.23 0.025 70 / 15%);
+  --color-input: oklch(0.23 0.025 70 / 18%);
+  --color-ring: oklch(0.55 0.07 72);
+  --color-ink: oklch(0.23 0.025 70);
+  --color-cream: oklch(0.955 0.019 88);
+  --color-cream-deep: oklch(0.88 0.045 83);
+  --color-sidebar: oklch(0.275 0.028 70);
+  --color-sidebar-foreground: oklch(0.95 0.018 88);
+  --color-sidebar-primary: oklch(0.78 0.1 82);
+  --color-sidebar-primary-foreground: oklch(0.22 0.02 70);
+  --color-sidebar-accent: oklch(0.36 0.03 70);
+  --color-sidebar-accent-foreground: oklch(0.96 0.018 88);
+  --color-sidebar-border: oklch(0.95 0.018 88 / 15%);
+  --color-sidebar-ring: oklch(0.78 0.1 82);
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'DM Serif Text', Georgia, serif;
+}
+
+:root {
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  color: oklch(0.23 0.025 70);
+  background: oklch(0.955 0.019 88);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --radius: 0.9rem;
+}
+
+* { border-color: oklch(0.23 0.025 70 / 15%); }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 12% 10%, oklch(0.98 0.012 89 / 80%), transparent 34rem),
+    radial-gradient(circle at 92% 78%, oklch(0.91 0.035 83 / 34%), transparent 32rem),
+    oklch(0.955 0.019 88);
+}
+
+button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+button { transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease, border-color 160ms ease; }
+button:active { transform: scale(0.975); }
+
+.display-title {
+  font-family: 'Bodoni Moda', Didot, 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: -0.075em;
+}
+
+.editorial-kicker {
+  font-size: 0.64rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.23em;
+  text-transform: uppercase;
+  color: oklch(0.23 0.025 70 / 58%);
+}
+
+.editorial-card { box-shadow: 0 18px 60px oklch(0.23 0.025 70 / 5%); }
+
+.editorial-chat {
+  overflow: hidden;
+  border-color: oklch(0.23 0.025 70 / 14%);
+  border-radius: 1.5rem;
+  background: oklch(0.985 0.012 88 / 72%);
+  box-shadow: 0 18px 60px oklch(0.23 0.025 70 / 6%);
+}
+
+.editorial-chat textarea { border-color: oklch(0.23 0.025 70 / 16%); background: oklch(0.955 0.019 88 / 62%); }
+.editorial-chat form { border-color: oklch(0.23 0.025 70 / 12%); background: oklch(0.985 0.012 88 / 70%); }
+
+.ink-grid {
+  background-image: linear-gradient(oklch(0.23 0.025 70 / 5%) 1px, transparent 1px), linear-gradient(90deg, oklch(0.23 0.025 70 / 5%) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+::selection { background: oklch(0.78 0.1 82 / 55%); color: oklch(0.23 0.025 70); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A typed, auditable architecture</title>
+  <style>
+    *{box-sizing:border-box}
+    :root{--cream:#f3eee1;--ink:#211a14;--muted:#70685e;--blue:#dce6f1;--sage:#dbe6d8;--lilac:#e3e0ef;--sand:#e8dcc7}
+    .slide-container{width:1280px;min-height:720px;background:var(--cream);color:var(--ink)}
+    .frame{min-height:720px;padding-top:52px;padding-left:68px;padding-right:68px;display:grid;grid-template-columns:36% 64%;column-gap:56px}
+    .kicker,.label,.meta{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700}
+    .kicker{color:var(--muted);padding-top:4px}
+    h1{margin:25px 0 0;max-width:390px;font-family:"Bodoni 72","Didot","Bodoni MT",Georgia,serif;font-size:72px;line-height:.91;letter-spacing:-.05em;font-weight:700}
+    .intro{margin:27px 0 0;max-width:350px;font-family:Georgia,serif;font-size:21px;line-height:1.28;color:#5d554c}
+    .left-note{margin-top:58px;border-top:3px solid var(--ink);padding-top:13px;max-width:330px;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.13em;font-size:10px;line-height:1.55;color:var(--muted)}
+    .right{padding-top:5px}
+    .right-head{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid rgba(33,26,20,.32);padding-bottom:14px}
+    .right-head p{margin:0;max-width:330px;font-family:Georgia,serif;font-size:17px;line-height:1.25;color:#5d554c;text-align:right}
+    .stack{padding-top:8px}
+    /* reduced each band min-height from 86px to 82px to avoid overflow while keeping fonts and structure intact */
+    .band{min-height:82px;border-top:1px solid rgba(33,26,20,.34);display:grid;grid-template-columns:70px 185px 1fr;align-items:center;column-gap:12px;position:relative}
+    .band:last-child{border-bottom:1px solid rgba(33,26,20,.34)}
+    .band:after{content:"↓";position:absolute;left:25px;bottom:-12px;font-family:Georgia,serif;font-size:20px;color:#938b7d;background:var(--cream);line-height:1}
+    .band:last-child:after{display:none}
+    .band:nth-child(1){border-top:8px solid #8198ae}.band:nth-child(2){border-top:8px solid #ad936b}.band:nth-child(3){border-top:8px solid #7d9a80}.band:nth-child(4){border-top:8px solid #9892b7}
+    .num{font-family:"Bodoni 72",Didot,Georgia,serif;font-size:51px;line-height:1;color:#8198ae}
+    .band:nth-child(2) .num{color:#ad936b}.band:nth-child(3) .num{color:#7d9a80}.band:nth-child(4) .num{color:#9892b7}
+    .layer{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.15em;font-size:12px;line-height:1.35;font-weight:700}
+    .copy{font-family:Georgia,serif;font-size:17px;line-height:1.22;color:#5d554c}
+    .copy strong{color:var(--ink);font-weight:400}
+    .bottom{margin-top:19px;border-top:3px solid var(--ink);padding-top:13px;display:grid;grid-template-columns:1fr 1fr;column-gap:26px}
+    .bottom p{margin:0;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:10px;line-height:1.55;color:var(--muted)}
+    .bottom strong{color:var(--ink)}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="frame">
+      <section>
+        <div class="kicker">07 / Technical architecture</div>
+        <h1>A typed, auditable architecture.</h1>
+        <p class="intro">Every layer has a job: make the next decision clearer, keep the contract explicit, and preserve the evidence trail.</p>
+        <div class="left-note">Built for a transparent prototype today; structured for stronger ingestion, evaluation, and expert operations next.</div>
+      </section>
+      <section class="right">
+        <div class="right-head"><div class="label">Four layers, one trace</div><p>From multilingual input to a persisted, reviewable decision trail.</p></div>
+        <div class="stack">
+          <div class="band"><div class="num">01</div><div class="layer">Experience<br/>layer</div><div class="copy"><strong>React 19 · Tailwind 4 · responsive dashboard</strong><br/>Language switcher, guided intake, evidence cards, history, and human-review workflow.</div></div>
+          <div class="band"><div class="num">02</div><div class="layer">Typed contract<br/>layer</div><div class="copy"><strong>tRPC procedures · Zod validation</strong><br/>One shared contract for asking, routing, classification, escalation, and admin stewardship.</div></div>
+          <div class="band"><div class="num">03</div><div class="layer">Evidence<br/>server</div><div class="copy"><strong>Express · deterministic retrieval · server-side LLM</strong><br/>Curated passages are selected by intent and jurisdiction before structured explanation.</div></div>
+          <div class="band"><div class="num">04</div><div class="layer">Persistence<br/>and audit</div><div class="copy"><strong>Drizzle ORM · MySQL/TiDB</strong><br/>Sources, chunks, conversations, classifications, escalations, and audit events remain queryable.</div></div>
+        </div>
+        <div class="bottom"><p><strong>Security boundary</strong><br/>Authentication · admin roles · backend-only secrets · rate limiting</p><p><strong>Evidence boundary</strong><br/>Provenance · verification state · citations · confidence · abstention</p></div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

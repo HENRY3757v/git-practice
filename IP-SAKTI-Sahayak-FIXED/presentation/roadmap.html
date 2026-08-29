@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prototype today. Defensible workflow next.</title>
+  <style>
+    *{box-sizing:border-box}
+    :root{--ink:#211a14;--cream:#f3eee1;--muted:#c0b7a9;--blue:#9eb3c8;--sage:#aabea4;--lilac:#bdb7d2;--sand:#d0b58a}
+    .slide-container{width:1280px;min-height:720px;background:var(--ink);color:var(--cream);padding-top:54px;padding-left:68px;padding-right:68px;display:grid;grid-template-columns:43% 57%;column-gap:58px}
+    .kicker,.label,.meta,.foot{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700}
+    .kicker{color:var(--muted);padding-top:4px}
+    h1{margin:28px 0 0;max-width:470px;font-family:"Bodoni 72","Didot","Bodoni MT",Georgia,serif;font-size:78px;line-height:.9;letter-spacing:-.05em;font-weight:700}
+    .intro{margin:28px 0 0;max-width:390px;font-family:Georgia,serif;font-size:22px;line-height:1.28;color:#d4cbc0}
+    /* Reduced final spacing to reclaim vertical space */
+    .final{margin-top:30px;border-top:3px solid var(--cream);padding-top:10px;max-width:390px;font-family:Georgia,serif;font-size:28px;line-height:1.08;color:var(--cream)}
+    .right{padding-top:7px}
+    .right-head{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid rgba(243,238,225,.38);padding-bottom:15px}
+    .right-head p{margin:0;max-width:280px;text-align:right;font-family:Georgia,serif;font-size:16px;line-height:1.25;color:#c9c0b4}
+    /* Slightly reduced band min-height to save vertical space */
+    .band{min-height:120px;border-bottom:1px solid rgba(243,238,225,.34);display:grid;grid-template-columns:72px 160px 1fr;gap:18px;align-items:center}
+    .band:first-of-type{border-top:1px solid rgba(243,238,225,.34)}
+    .n{font-family:"Bodoni 72",Didot,Georgia,serif;font-size:59px;line-height:1;color:var(--blue)}
+    .band:nth-child(3) .n{color:var(--sage)}.band:nth-child(4) .n{color:var(--lilac)}
+    .label{font-size:12px;line-height:1.4;color:var(--cream)}
+    .copy{max-width:355px;font-family:Georgia,serif;font-size:18px;line-height:1.28;color:#c9c0b4}
+    .copy strong{color:var(--cream);font-weight:400}
+    /* Reduced bottom margin and padding to bring footer inside 720px */
+    .bottom{grid-column:1 / 3;margin-top:0;border-top:3px solid var(--cream);padding-top:6px;display:grid;grid-template-columns:165px 1fr;gap:28px;align-items:start}
+    .foot{font-size:10px;line-height:1.45;color:var(--cream)}
+    .bottom p{margin:0;max-width:870px;font-family:Georgia,serif;font-size:17px;line-height:1.3;color:#c9c0b4}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <section>
+      <div class="kicker">09 / Roadmap and limits</div>
+      <h1>Prototype today. Defensible workflow next.</h1>
+      <p class="intro">Start with public evidence, make uncertainty visible, and build toward stronger institutional knowledge operations.</p>
+      <div class="final">Make the next decision more defensible.</div>
+    </section>
+    <section class="right">
+      <div class="right-head"><div class="label">What comes after the prototype</div><p>Keep the evidence boundary explicit as capability grows.</p></div>
+      <div class="band"><div class="n">01</div><div class="label">Now<br/>working prototype</div><div class="copy"><strong>Curated public references, multilingual intake, intent and jurisdiction routing, formulation classification, citations, confidence, history, escalation, and admin stewardship.</strong></div></div>
+      <div class="band"><div class="n">02</div><div class="label">Next<br/>deeper evidence operations</div><div class="copy">Verified ingestion pipelines, stronger semantic retrieval, jurisdiction-specific checklists, document upload and extraction, and expert queue operations.</div></div>
+      <div class="band"><div class="n">03</div><div class="label">Boundary<br/>what it is not</div><div class="copy">Not legal advice. Not a patentability opinion. Not a licensing decision. Not unrestricted access to a proprietary knowledge database.</div></div>
+    </section>
+    <footer class="bottom"><div class="foot">Closing principle</div><p>IP-SAKTI Sahayak is an evidence-navigation and triage layer: useful before action, transparent about limits, and designed to hand consequential questions to qualified humans.</p></footer>
+  </div>
+</body>
+</html>

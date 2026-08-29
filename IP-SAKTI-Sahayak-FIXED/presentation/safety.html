@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safety is a product feature</title>
+  <style>
+    *{box-sizing:border-box}:root{--cream:#f3eee1;--ink:#211a14;--muted:#70685e;--blue:#8298ae;--sage:#7e9b82;--lilac:#9690bb;--sand:#ad936b}
+    .slide-container{width:1280px;min-height:720px;background:var(--cream);color:var(--ink);display:grid;grid-template-columns:41% 59%;column-gap:58px;padding-top:52px;padding-left:68px;padding-right:68px}
+    .kicker,.label,.meta,.foot{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700}
+    .kicker{color:var(--muted);padding-top:4px}
+    h1{margin:27px 0 0;max-width:430px;font-family:"Bodoni 72","Didot","Bodoni MT",Georgia,serif;font-size:77px;line-height:.91;letter-spacing:-.05em;font-weight:700}
+    .intro{margin:29px 0 0;max-width:360px;font-family:Georgia,serif;font-size:21px;line-height:1.28;color:#5d554c}
+    .boundary{margin-top:76px;border-top:3px solid var(--ink);padding-top:13px;max-width:350px;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.12em;font-size:11px;line-height:1.55}
+    .boundary span{Color:var(--muted)}
+    .right{padding-top:4px}
+    .right-head{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid rgba(33,26,20,.34);padding-bottom:14px}
+    .right-head p{margin:0;max-width:295px;text-align:right;color:var(--muted);font-family:Arial,Helvetica,sans-serif;font-size:11px;line-height:1.45}
+    /* Reduced each row min-height to pull the layout up slightly and avoid overflow */
+    .safety-row{min-height:104px;border-bottom:1px solid rgba(33,26,20,.34);display:grid;grid-template-columns:78px 190px 1fr;gap:14px;align-items:center}
+    .safety-row:first-of-type{border-top:1px solid rgba(33,26,20,.34)}
+    .n{font-family:"Bodoni 72",Didot,Georgia,serif;font-size:57px;line-height:1;color:var(--blue)}
+    .safety-row:nth-child(3) .n{color:var(--sage)}.safety-row:nth-child(4) .n{color:var(--lilac)}.safety-row:nth-child(5) .n{color:var(--sand)}
+    .label{font-size:12px;line-height:1.35}
+    .copy{max-width:350px;font-family:Georgia,serif;font-size:17px;line-height:1.28;color:#5d554c}
+    .footer{grid-column:1 / 3;margin-top:18px;border-top:3px solid var(--ink);padding-top:13px;display:grid;grid-template-columns:160px 1fr;gap:28px;align-items:start}
+    .foot{color:var(--ink);font-size:10px;line-height:1.45}
+    .footer p{margin:0;max-width:880px;font-family:Georgia,serif;font-size:16px;line-height:1.35;color:#5d554c}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <section>
+      <div class="kicker">06 / Safety by design</div>
+      <h1>Safety is a product feature.</h1>
+      <p class="intro">The assistant is designed to make uncertainty visible—and to know when the next step belongs with a human expert.</p>
+      <div class="boundary">The promise <span>is not certainty.</span><br/>It is a more defensible first pass.</div>
+    </section>
+    <section class="right">
+      <div class="right-head"><div class="label">Four boundaries</div><p>Guardrails are part of the response contract, not a disclaimer added at the end.</p></div>
+      <div class="safety-row"><div class="n">01</div><div class="label">Information<br/>not advice</div><div class="copy">The interface repeatedly frames outputs as legal information and triage—not a legal conclusion.</div></div>
+      <div class="safety-row"><div class="n">02</div><div class="label">Abstain when<br/>evidence is thin</div><div class="copy">Insufficient or incomplete provenance lowers confidence and surfaces the limitation instead of inventing guidance.</div></div>
+      <div class="safety-row"><div class="n">03</div><div class="label">TKDL pointer<br/>not open access</div><div class="copy">A public WIPO pointer is kept distinct from restricted database access or a claimed prior-art search.</div></div>
+      <div class="safety-row"><div class="n">04</div><div class="label">Secure by<br/>workflow</div><div class="copy">Authentication, admin roles, validation, rate limiting, backend-only secrets, and audit events protect the evidence trail.</div></div>
+    </section>
+    <footer class="footer"><div class="foot">Boundary statement</div><p>IP-SAKTI Sahayak does not provide legal advice, a patentability opinion, a licensing decision, or unrestricted access to proprietary knowledge databases.</p></footer>
+  </div>
+</body>
+</html>

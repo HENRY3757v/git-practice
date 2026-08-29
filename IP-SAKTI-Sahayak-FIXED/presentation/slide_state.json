@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "title": "IP-SAKTI Sahayak",
+    "created": 1787988378.889,
+    "last_updated": 1787989086.367,
+    "total_slides": 10
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "state": "edited",
+      "pageNum": 1
+    },
+    {
+      "id": "problem",
+      "state": "edited",
+      "pageNum": 2
+    },
+    {
+      "id": "users",
+      "state": "edited",
+      "pageNum": 3
+    },
+    {
+      "id": "solution",
+      "state": "edited",
+      "pageNum": 4
+    },
+    {
+      "id": "journey",
+      "state": "edited",
+      "pageNum": 5
+    },
+    {
+      "id": "rag",
+      "state": "edited",
+      "pageNum": 6
+    },
+    {
+      "id": "safety",
+      "state": "edited",
+      "pageNum": 7
+    },
+    {
+      "id": "architecture",
+      "state": "edited",
+      "pageNum": 8
+    },
+    {
+      "id": "impact",
+      "state": "edited",
+      "pageNum": 9
+    },
+    {
+      "id": "roadmap",
+      "state": "edited",
+      "pageNum": 10
+    }
+  ],
+  "outline": [
+    {
+      "id": "cover",
+      "title": "IP-SAKTI Sahayak",
+      "summary": "Evidence before assurance: a multilingual, evidence-led assistant for responsible Ayurvedic formulation commercialization.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "problem",
+      "title": "The problem is not a lack of information",
+      "summary": "Ayurvedic innovators must connect IP, regulation, ABS, and prior-art decisions across fragmented public sources and technical language.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "users",
+      "title": "Designed for the moment before action",
+      "summary": "Primary users are Ayurveda startups, researchers, MSMEs, university innovation cells, and incubators preparing to file, license, launch, or export.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "solution",
+      "title": "A guided evidence desk",
+      "summary": "The assistant routes the question, classifies the formulation, retrieves authoritative passages, returns structured guidance, and offers a human-review handoff.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "journey",
+      "title": "Question → Route → Classify → Explain",
+      "summary": "Walk through the commercialization journey from an initial formulation question to a cited, confidence-aware response and escalation.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "rag",
+      "title": "Every answer carries its evidence trail",
+      "summary": "Show the source metadata contract, transparent retrieval, server-side LLM orchestration, citation integrity, and confidence scoring.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "safety",
+      "title": "Safety is a product feature",
+      "summary": "Legal-information-only framing, safe abstention, permission-aware TKDL pointers, authentication, validation, rate limiting, and audit logs.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "architecture",
+      "title": "A typed, auditable architecture",
+      "summary": "React and Tailwind frontend, tRPC contracts, Express and Drizzle backend, MySQL/TiDB persistence, deterministic retrieval, and server-side LLM gateway.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "impact",
+      "title": "A faster first pass, a better handoff",
+      "summary": "Demonstrate the founder journey and explain impact: faster triage, better provenance discipline, clearer escalation, and reusable institutional knowledge.",
+      "image_plan": "Use a suitable image if needed"
+    },
+    {
+      "id": "roadmap",
+      "title": "Prototype today. Defensible workflow next.",
+      "summary": "Present current capabilities, next-step roadmap, and explicit limitations: navigation and triage, not legal advice or a patentability opinion.",
+      "image_plan": "Use a suitable image if needed"
+    }
+  ]
+}

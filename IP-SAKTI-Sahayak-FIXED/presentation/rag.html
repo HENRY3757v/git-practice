@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Every answer carries its evidence trail</title>
+  <style>
+    *{box-sizing:border-box}:root{--cream:#f3eee1;--ink:#211a14;--muted:#70685e;--blue:#dce6f1;--sage:#dbe6d8;--lilac:#e3e0ef}
+    body{margin:0}
+    .slide-container{width:1280px;min-height:720px;background:var(--cream);color:var(--ink)}
+    .frame{min-height:720px;padding:52px 68px 11px;display:flex;flex-direction:column}
+    .eyebrow,.label,.meta{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700}
+    .eyebrow{color:var(--muted);padding-top:4px}
+    .head{display:grid;grid-template-columns:1fr 320px;gap:46px;align-items:end}
+    h1{margin:22px 0 0;max-width:760px;font-family:"Bodoni 72","Didot","Bodoni MT",Georgia,serif;font-size:71px;line-height:.91;letter-spacing:-.05em;font-weight:700}
+    .thesis{margin:0 0 5px;font-family:Georgia,serif;font-size:20px;line-height:1.25;color:#5d554c}
+    .rule{margin-top:28px;border-top:3px solid var(--ink)}
+    .pipeline{flex:1;display:grid;grid-template-columns:1fr 34px 1fr 34px 1fr;align-items:stretch;gap:0;padding-top:28px}
+    .stage{border-top:9px solid var(--blue);padding:21px 22px 0 0;display:flex;flex-direction:column;min-width:0}
+    .stage:nth-child(3){border-color:#95aa91}.stage:nth-child(5){border-color:#a09abf}
+    .stage-no{font-family:"Bodoni 72",Didot,Georgia,serif;font-size:56px;line-height:1;color:#9a9388}
+    .stage:nth-child(1) .stage-no{color:#788fa7}.stage:nth-child(3) .stage-no{color:#79977c}.stage:nth-child(5) .stage-no{color:#918bb1}
+    .label{margin-top:11px;font-size:13px;line-height:1.35}
+    .copy{margin-top:18px;max-width:275px;font-family:Georgia,serif;font-size:18px;line-height:1.3;color:#5d554c}
+    .meta-list{margin-top:auto;border-top:1px solid rgba(33,26,20,.3);padding-top:15px;font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.7;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+    .meta-list strong{color:var(--ink);font-weight:700}
+    .arrow{display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:29px;color:#9a9388}
+    .bottom{border-top:1px solid rgba(33,26,20,.32);padding-top:16px;display:grid;grid-template-columns:1fr 1.3fr;gap:32px;align-items:start}
+    .principle{font-family:Georgia,serif;font-size:22px;line-height:1.14;max-width:430px}
+    .foot{font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:1.55;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+    .foot strong{color:var(--ink)}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="frame">
+      <div class="head"><div><div class="eyebrow">06 / The evidence trail</div><h1>Every answer carries its evidence trail.</h1></div><p class="thesis">The model is downstream of provenance—not a replacement for it.</p></div>
+      <div class="rule"></div>
+      <div class="pipeline">
+        <section class="stage"><div class="stage-no">01</div><div class="label">Source contract</div><p class="copy">Every passage enters with enough context to be checked by a human steward.</p><div class="meta-list"><strong>Stored with the passage</strong><br/>Authority · public URL<br/>Section / locator · version<br/>Jurisdiction · language<br/>Verification status</div></section>
+        <div class="arrow">→</div>
+        <section class="stage"><div class="stage-no">02</div><div class="label">Transparent retrieval</div><p class="copy">Intent and jurisdiction narrow the search; deterministic lexical scoring surfaces relevant indexed passages.</p><div class="meta-list"><strong>Selected for the answer</strong><br/>IP · regulatory · ABS<br/>Prior art · TKDL pointer<br/>India · international · both</div></section>
+        <div class="arrow">→</div>
+        <section class="stage"><div class="stage-no">03</div><div class="label">Structured explanation</div><p class="copy">The server-side LLM receives selected evidence and returns guidance, citations, confidence, limits, and escalation.</p><div class="meta-list"><strong>Integrity check</strong><br/>Citation must map to evidence<br/>Low evidence lowers confidence<br/>Insufficient evidence abstains safely</div></section>
+      </div>
+      <div class="bottom"><div class="principle">No citation, no certainty.<br/><span style="color:#79977c;">No evidence, no invented answer.</span></div><div class="foot"><strong>Public-source context</strong><br/>IP India · CDSCO · India Code · WIPO TKDL information page · WIPO PCT system<br/>The prototype’s corpus is curated from authoritative public references and remains explicit about its limits.</div></div>
+    </div>
+  </div>
+</body>
+</html>

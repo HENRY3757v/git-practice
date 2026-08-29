@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IP-SAKTI Sahayak</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { --cream:#f3eee1; --ink:#211a14; --sage:#aab9a5; --lilac:#d7d4e5; --muted:#70685e; }
+    body { margin:0; }
+    .slide-container { width:1280px; min-height:720px; background:var(--cream); color:var(--ink); display:grid; grid-template-columns:58% 42%; overflow:hidden; }
+    .left { min-height:720px; padding:54px 56px 34px 68px; display:flex; flex-direction:column; justify-content:space-between; }
+    .right { min-height:720px; background:var(--ink); color:var(--cream); padding:54px 54px 34px 48px; display:flex; flex-direction:column; justify-content:space-between; }
+    .kicker,.meta,.domain-label { font-family:Arial, Helvetica, sans-serif; text-transform:uppercase; letter-spacing:.22em; font-size:12px; font-weight:700; }
+    .kicker { color:var(--muted); }
+    h1 { margin:26px 0 0; max-width:700px; font-family:"Bodoni 72","Didot","Bodoni MT",Georgia,serif; font-size:93px; line-height:.88; font-weight:700; letter-spacing:-.055em; }
+    .dek { margin:34px 0 0; max-width:520px; font-family:Georgia,serif; font-size:24px; line-height:1.18; color:#5d554c; }
+    .rule { width:100%; border-top:1px solid rgba(33,26,20,.28); }
+    .bottom { display:grid; grid-template-columns:1.1fr 1fr; gap:34px; align-items:end; }
+    .domains { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+    .domain { border-top:3px solid var(--ink); padding-top:10px; font-family:Arial,Helvetica,sans-serif; font-size:11px; text-transform:uppercase; letter-spacing:.14em; }
+    .domain:nth-child(2){border-color:#b29b70}.domain:nth-child(3){border-color:#7e9d82}.domain:nth-child(4){border-color:#9690bb}
+    .meta-line { font-family:Arial,Helvetica,sans-serif; font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--muted); line-height:1.6; }
+    .mark { width:64px; height:64px; border:1px solid rgba(243,238,225,.5); display:flex; align-items:center; justify-content:center; font-family:"Bodoni 72",Didot,Georgia,serif; font-size:30px; }
+    .right h2 { margin:22px 0 0; max-width:310px; font-family:Georgia,serif; font-size:35px; line-height:1.04; font-weight:400; }
+    .right .small { max-width:290px; font-family:Arial,Helvetica,sans-serif; color:rgba(243,238,225,.62); font-size:12px; line-height:1.55; }
+    .journey { border-top:1px solid rgba(243,238,225,.35); }
+    .step { padding:16px 0 14px; border-bottom:1px solid rgba(243,238,225,.2); display:grid; grid-template-columns:44px 1fr; gap:12px; }
+    .num { font-family:Arial,Helvetica,sans-serif; color:var(--sage); font-size:11px; letter-spacing:.16em; }
+    .step strong { display:block; font-family:Arial,Helvetica,sans-serif; font-size:12px; text-transform:uppercase; letter-spacing:.13em; }
+    .step span { display:block; margin-top:4px; color:rgba(243,238,225,.62); font-family:Georgia,serif; font-size:14px; }
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <section class="left">
+      <div>
+        <div class="kicker">SIH 2026 · Evidence-led commercialization</div>
+        <h1>IP-SAKTI<br/>Sahayak.</h1>
+        <p class="dek">A multilingual evidence desk for moving an Ayurvedic formulation from idea to a more responsible next step.</p>
+      </div>
+      <div>
+        <div class="rule"></div>
+        <div class="bottom" style="padding-top:14px;">
+          <div class="domains">
+            <div class="domain">IP</div><div class="domain">Regulatory</div><div class="domain">ABS</div><div class="domain">Prior art</div>
+          </div>
+          <div class="meta-line">English · हिंदी · বাংলা<br/>Prototype / source-grounded triage</div>
+        </div>
+      </div>
+    </section>
+    <aside class="right">
+      <div>
+        <div class="mark">IS</div>
+        <h2>Evidence before assurance.</h2>
+        <p class="small" style="margin-top:18px;">A guided workflow for the questions that sit between formulation, filing, regulation, biodiversity, and launch.</p>
+      </div>
+      <div class="journey">
+        <div class="step"><div class="num">01</div><div><strong>Ask</strong><span>Start with the formulation and the decision ahead.</span></div></div>
+        <div class="step"><div class="num">02</div><div><strong>Route</strong><span>Separate IP, regulatory, ABS, and prior-art signals.</span></div></div>
+        <div class="step"><div class="num">03</div><div><strong>Ground</strong><span>Return the next step with provenance, limits, and a human handoff.</span></div></div>
+      </div>
+    </aside>
+  </div>
+</body>
+</html>

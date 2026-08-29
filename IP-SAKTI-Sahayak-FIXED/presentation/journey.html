@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question to Explain</title>
+  <style>
+    *{box-sizing:border-box}:root{--cream:#f3eee1;--ink:#211a14;--muted:#70685e;--blue:#dce6f1;--sage:#dbe6d8;--lilac:#e3e0ef;--sand:#e8dcc7}
+    /* keep min-height:720px as required */
+    .slide-container{width:1280px;min-height:720px;background:var(--cream);color:var(--ink);padding:52px 68px 0}
+    .kicker,.label,.meta{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.2em;font-size:11px;font-weight:700}
+    .kicker{color:var(--muted);padding-top:4px}
+    h1{margin:22px 0 0;max-width:820px;font-family:"Bodoni 72","Didot","Bodoni MT",Georgia,serif;font-size:74px;line-height:.9;letter-spacing:-.05em;font-weight:700}
+    .intro{margin:21px 0 0;max-width:730px;font-family:Georgia,serif;font-size:21px;line-height:1.25;color:#5d554c}
+    /* reduce spacing above question to save vertical space */
+    .question{margin-top:28px;border-top:3px solid var(--ink);border-bottom:1px solid rgba(33,26,20,.3);padding:16px 0 15px;display:grid;grid-template-columns:164px 1fr;gap:24px;align-items:center}
+    .question .label{color:var(--muted);font-size:10px}
+    .question p{margin:0;font-family:Georgia,serif;font-size:24px;line-height:1.14;color:#413a32}
+    /* slightly tightened flow spacing */
+    .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:32px;border-top:1px solid rgba(33,26,20,.3);border-bottom:1px solid rgba(33,26,20,.3)}
+    .stage{min-height:152px;padding:16px 22px 13px 0;margin-right:22px;border-right:1px solid rgba(33,26,20,.25)}
+    .stage:last-child{border-right:0;margin-right:0}
+    .stage-no{font-family:"Bodoni 72",Didot,Georgia,serif;font-size:54px;line-height:1;color:#7b91a8}
+    .stage:nth-child(2) .stage-no{color:#a18e6d}.stage:nth-child(3) .stage-no{color:#78997e}.stage:nth-child(4) .stage-no{color:#918ab2}
+    .stage h2{margin:12px 0 0;font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.14em;font-size:13px}
+    .stage p{margin:9px 0 0;max-width:220px;font-family:Georgia,serif;font-size:16px;line-height:1.25;color:#625a50}
+    /* tighten handoff spacing slightly */
+    .handoff{margin-top:20px;display:grid;grid-template-columns:164px 1fr auto;gap:22px;align-items:center;border-top:3px solid var(--ink);padding-top:12px}
+    .handoff .label{color:var(--muted);font-size:10px}
+    .handoff p{margin:0;max-width:590px;font-family:Georgia,serif;font-size:18px;line-height:1.28;color:#5d554c}
+    .confidence{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.16em;font-size:10px;line-height:1.5;color:var(--muted);text-align:right}
+    .confidence strong{color:var(--ink)}
+  </style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="kicker">04 / The demo journey</div>
+    <h1>Question → Route → Classify → Explain.</h1>
+    <p class="intro">A founder starts with one practical question. The assistant turns it into a bounded, evidence-aware workflow.</p>
+    <div class="question"><div class="label">Example question</div><p>“Can I commercialize an Ayurvedic herbal formulation using an Indian plant ingredient?”</p></div>
+    <div class="flow">
+      <div class="stage"><div class="stage-no">01</div><h2>Question</h2><p>Capture the formulation, intended claim, market, and decision the user is facing.</p></div>
+      <div class="stage"><div class="stage-no">02</div><h2>Route</h2><p>Separate IP, regulatory, ABS, and prior-art signals across India or international scope.</p></div>
+      <div class="stage"><div class="stage-no">03</div><h2>Classify</h2><p>Ask targeted questions to identify the formulation category and missing facts.</p></div>
+      <div class="stage"><div class="stage-no">04</div><h2>Explain</h2><p>Return cited passages, confidence, limitations, and distinct ABS / TKDL pointers.</p></div>
+    </div>
+    <div class="handoff"><div class="label">Human handoff</div><p>If the evidence is incomplete or the decision is consequential, package the context and request expert review.</p><div class="confidence"><strong>Safe by default</strong><br/>Information · not legal advice</div></div>
+  </div>
+</body>
+</html>
