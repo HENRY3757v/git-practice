@@ -1,0 +1,114 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-canvas: var(--canvas);
+  --color-elevated: var(--elevated);
+  --color-subtle: var(--subtle);
+  --color-cyan: var(--cyan);
+  --color-indigo: var(--indigo);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.13 0.022 257);
+  --foreground: oklch(0.96 0.012 248);
+  --canvas: oklch(0.105 0.019 260);
+  --card: oklch(0.165 0.024 258);
+  --card-foreground: oklch(0.96 0.012 248);
+  --elevated: oklch(0.195 0.029 258);
+  --popover: oklch(0.18 0.026 258);
+  --popover-foreground: oklch(0.96 0.012 248);
+  --primary: oklch(0.76 0.13 205);
+  --primary-foreground: oklch(0.115 0.025 250);
+  --secondary: oklch(0.22 0.035 262);
+  --secondary-foreground: oklch(0.91 0.018 250);
+  --muted: oklch(0.2 0.025 258);
+  --muted-foreground: oklch(0.68 0.03 251);
+  --accent: oklch(0.28 0.07 274);
+  --accent-foreground: oklch(0.95 0.012 248);
+  --indigo: oklch(0.67 0.16 277);
+  --cyan: oklch(0.78 0.13 201);
+  --success: oklch(0.74 0.13 162);
+  --warning: oklch(0.8 0.14 83);
+  --destructive: oklch(0.64 0.2 25);
+  --destructive-foreground: oklch(0.98 0.005 250);
+  --border: oklch(0.3 0.028 257 / 72%);
+  --input: oklch(0.31 0.035 258);
+  --ring: oklch(0.76 0.13 205);
+  --sidebar: oklch(0.11 0.021 260);
+  --sidebar-foreground: oklch(0.91 0.018 250);
+  --sidebar-primary: oklch(0.76 0.13 205);
+  --sidebar-primary-foreground: oklch(0.115 0.025 250);
+  --sidebar-accent: oklch(0.2 0.04 264);
+  --sidebar-accent-foreground: oklch(0.96 0.012 248);
+  --sidebar-border: oklch(0.25 0.025 258);
+  --sidebar-ring: oklch(0.76 0.13 205);
+  --subtle: oklch(0.56 0.025 250);
+}
+
+@layer base {
+  * { border-color: var(--border); }
+  html { color-scheme: dark; }
+  body {
+    margin: 0;
+    min-width: 320px;
+    background: var(--canvas);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    text-rendering: optimizeLegibility;
+  }
+  button, a, textarea, input { -webkit-tap-highlight-color: transparent; }
+  ::selection { background: color-mix(in oklab, var(--primary) 30%, transparent); }
+}
+
+@utility surface-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--border) 28%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--border) 28%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, black, transparent 78%);
+}
+
+@utility text-balance { text-wrap: balance; }
+
+@keyframes scan { 0% { transform: translateX(-110%); } 100% { transform: translateX(310%); } }
+@keyframes rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
